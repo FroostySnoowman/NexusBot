@@ -1,0 +1,158 @@
+Global:
+    CLIENT_INVALID_TIMEZONE: "Invalid Timezone."
+    FREELANCER_INVALID_TIMEZONE: "Invalid Timezone. Please try to set it again!"
+
+    FAILED_TO_REPLY_TITLE: "Failed to Reply"
+    FAILED_TO_REPLY_DESCRIPTION: "Failed to reply. This reply may not exist anymore."
+    
+    TICKET_DOES_NOT_EXIST_TITLE: "Error"
+    TICKET_DOES_NOT_EXIST_DESCRIPTION: "This ticket does not exist anymore!"
+
+    NOT_IN_FREELANCERS_TABLE_TITLE: "Error"
+    NOT_IN_FREELANCERS_TABLE_DESCRIPTION: "You are not in the freelancer's database. Please use the dashboard command and set up your profile!"
+
+Order:
+    TOS_AGREEMENT_TITLE: "TOS Agreement"
+    TOS_AGREEMENT_DESCRIPTION: "In order to create an order, you must accept our [TOS](https://tos.nexusservices.xyz/)."
+
+    DECLINE_TOS_AGREEMENT_TITLE: "Failed To Agree To TOS Agreement"
+    DECLINE_TOS_AGREEMENT_DESCRIPTION: "Unfortunately, we are not able to work with you unless you accept our [TOS](https://tos.nexusservices.xyz/)."
+
+    INVALID_BUDGET_TITLE: "Invalid Budget"
+    INVALID_BUDGET_DESCRIPTION: "You must provide a valid integer for your budget!"
+    INVALID_DEADLINE_NOT_ENOUGH_ARGS_TITLE: "Invalid Deadline"
+    INVALID_DEADLINE_NOT_ENOUGH_ARGS_DESCRIPTION: "You must provide a valid deadline. `d` (days), `w` (weeks (7 days)), `m` (months (30 days)) are the valid arguments. Example: 7d, 1w, 1m"
+    INVALID_DEADLINE_ARGS_INVALID_TITLE: "Invalid Deadline"
+    INVALID_DEADLINE_ARGS_INVALID_DESCRIPTION: "You must provide a valid deadline. `d` (days), `w` (weeks (7 days)), `m` (months (30 days)) are the valid arguments. Example: 7d, 1w, 1m"
+
+    MAX_TICKETS_OPEN_TITLE: "Failed To Create"
+    MAX_TICKETS_OPEN_DESCRIPTION: "There's already the maximum number of tickets open! Please contact an executive to resolve this error."
+
+    NEW_ORDER_CATEGORY_TICKET_TITLE: "New Order Ticket"
+    NEW_ORDER_CATEGORY_TICKET_DESCRIPTION: "Select the department which you believe fits best for your requirements."
+    NEW_ORDER_ROLE_TICKET_TITLE: "New Order Ticket"
+    NEW_ORDER_ROLE_TICKET_DESCRIPTION: "Select the role which you believe fits best for your requirements."
+    NEW_ORDER_CREATING_TITLE: "New Order Ticket"
+    NEW_ORDER_CREATING_DESCRIPTION: "Creating..."
+    SUCCESS_NEW_ORDER_CREATING_TITLE: "New Order Ticket"
+    SUCCESS_NEW_ORDER_CREATING_DESCRIPTION: "The ticket has been created at %CHANNEL%!" # %CHANNEL% to mention the channel
+    CLIENT_MESSAGING_TITLE: "Messaging"
+    CLIENT_MESSAGING_DESCRIPTION: "Replies to this message will be sent to client."
+    FREELANCER_MESSAGING_TITLE: "Messaging"
+    FREELANCER_MESSAGING_DESCRIPTION: "Replies to this message will be sent to the freelancers."
+    FREELANCER_BUSY_TITLE: "Freelancer Replies"
+    FREELANCER_BUSY_FOOTER: "Freelancers that are busy or deny the commission will show up here."
+
+Freelancer:
+    NOT_FREELANCER_DASHBOARD: "You are not a freelancer!"
+    NOT_VALID_PAYPAL_EMAIL_LINK: "You must provide a valid email!"
+    NOT_VALID_PAYPAL_ME_LINK: "You must provide a valid paypal me link!"
+
+    DESCRIPTION_SET_TITLE: "Description Setting Success"
+    DESCRIPTION_SET_DESCRIPTION: "Successfully set your description!"
+    NOT_FREELANCER_SET_DESCRIPTION_TITLE: "Description Setting Failed"
+    NOT_FREELANCER_SET_DESCRIPTION_DESCRIPTION: "You are not a freelancer!"
+    DESCRIPTION_REMOVE_TITLE: "Description Removal Success"
+    DESCRIPTION_REMOVE_DESCRIPTION: "Successfully removed your description!"
+    NO_DESCRIPTION_REMOVE_TITLE: "Description Removal Failed"
+    NO_DESCRIPTION_REMOVE_DESCRIPTION: "You do not have a set description!"
+    NOT_FREELANCER_REMOVE_DESCRIPTION_TITLE: "Description Removal Failed"
+    NOT_FREELANCER_REMOVE_DESCRIPTION_DESCRIPTION: "You are not a freelancer!"
+
+    PORTFOLIO_SET_TITLE: "Portfolio Setting Success"
+    PORTFOLIO_SET_DESCRIPTION: "Successfully set your portfolio!"
+    NOT_FREELANCER_SET_PORTFOLIO_TITLE: "Portfolio Setting Failed"
+    NOT_FREELANCER_SET_PORTFOLIO_DESCRIPTION: "You are not a freelancer!"
+    PORTFOLIO_REMOVE_TITLE: "Portfolio Removal Success"
+    PORTFOLIO_REMOVE_DESCRIPTION: "Successfully removed your portfolio!"
+    NO_PORTFOLIO_REMOVE_TITLE: "Portfolio Removal Failed"
+    NO_PORTFOLIO_REMOVE_DESCRIPTION: "You do not have a set portfolio!"
+    NOT_FREELANCER_REMOVE_PORTFOLIO_TITLE: "Portfolio Removal Failed"
+    NOT_FREELANCER_REMOVE_PORTFOLIO_DESCRIPTION: "You are not a freelancer!"
+
+    TIMEZONE_SET_TITLE: "Timezone Setting Success"
+    TIMEZONE_SET_DESCRIPTION: "Successfully set your timezone! Local time: `%TIME%`" # %TIME% for chosen time's local time
+    NOT_VALID_TIMEZONE_TIMEZONE_SET_TITLE: "Timezone Setting Failed"
+    NOT_VALID_TIMEZONE_TIMEZONE_SET_DESCRIPTION: "`%TIMEZONE%` is not a valid timezone! Please choose one from the dropdown list provided when you use the command." # %TIMEZONE% for the chosen timezone
+    NOT_FREELANCER_SET_TIMEZONE_TITLE: "Timezone Setting Failed"
+    NOT_FREELANCER_SET_TIMEZONE_DESCRIPTION: "You are not a freelancer!"
+    TIMEZONE_REMOVE_TITLE: "Timezone Removal Success"
+    TIMEZONE_REMOVE_DESCRIPTION: "Successfully removed your timezone!"
+    NO_TIMEZONE_REMOVE_TITLE: "Timezone Removal Failed"
+    NO_TIMEZONE_REMOVE_DESCRIPTION: "You do not have a set timezone!"
+    NOT_FREELANCER_REMOVE_TIMEZONE_TITLE: "Timezone Removal Failed"
+    NOT_FREELANCER_REMOVE_TIMEZONE_DESCRIPTION: "You are not a freelancer!"
+
+    PAYPAL_SET_TITLE: "PayPal Setting Success"
+    PAYPAL_SET_DESCRIPTION: "Successfully set your PayPal email!"
+    NOT_VALID_EMAIL_PAYPAL_SET_TITLE: "Paypal Setting Failed"
+    NOT_VALID_EMAIL_PAYPAL_SET_DESCRIPTION: "`%EMAIL%` is not a valid email! It must contain a `@`." # %EMAIL% for the chosen email
+    NOT_FREELANCER_SET_PAYPAL_TITLE: "PayPal Setting Failed"
+    NOT_FREELANCER_SET_PAYPAL_DESCRIPTION: "You are not a freelancer!"
+    PAYPAL_REMOVE_TITLE: "PayPal Removal Success"
+    PAYPAL_REMOVE_DESCRIPTION: "Successfully removed your PayPal email!"
+    NO_PAYPAL_REMOVE_TITLE: "PayPal Removal Failed"
+    NO_PAYPAL_REMOVE_DESCRIPTION: "You do not have a set PayPal email!"
+    NOT_FREELANCER_REMOVE_PAYPAL_TITLE: "PayPal Removal Failed"
+    NOT_FREELANCER_REMOVE_PAYPAL_DESCRIPTION: "You are not a freelancer!"
+
+    PAYPALME_SET_TITLE: "PayPalMe Setting Success"
+    PAYPALME_SET_DESCRIPTION: "Successfully set your PayPalMe link!"
+    NOT_VALID_LINK_PAYPALME_SET_TITLE: "PaypalMe Setting Failed"
+    NOT_VALID_LINK_PAYPALME_SET_DESCRIPTION: "`%LINK%` is not a valid link! It must contain `paypal.me/`." # %LINK% for the chosen link
+    NOT_FREELANCER_SET_PAYPALME_TITLE: "PayPalMe Setting Failed"
+    NOT_FREELANCER_SET_PAYPALME_DESCRIPTION: "You are not a freelancer!"
+    PAYPALME_REMOVE_TITLE: "PayPalMe Removal Success"
+    PAYPALME_REMOVE_DESCRIPTION: "Successfully removed your PayPalMe link!"
+    NO_PAYPALME_REMOVE_TITLE: "PayPalMe Removal Failed"
+    NO_PAYPALME_REMOVE_DESCRIPTION: "You do not have a set PayPal link!"
+    NOT_FREELANCER_REMOVE_PAYPALME_TITLE: "PayPalMe Removal Failed"
+    NOT_FREELANCER_REMOVE_PAYPALME_DESCRIPTION: "You are not a freelancer!"
+
+    DENY_TICKET_TITLE: "Deny Ticket"
+    DENY_TICKET_DESCRIPTION: "Please select the reason for you denying this ticket."
+    DENYING_TICKET_TITLE: "Denying Ticket"
+    DENYING_TICKET_DESCRIPTION: "Denying <a:loading:1081768286980673546>"
+    DENY_SUCCESS_TICKET_TITLE: "Denied Ticket"
+    DENY_SUCCESS_TICKET_DESCRIPTION: "Success ✅"
+
+    QUOTE_NOT_INTEGER_TITLE: "Failed To Quote"
+    QUOTE_NOT_INTEGER_DESCRIPTION: "You must provide a valid integer to quote!"
+    QUOTE_DEADLINE_NOT_ENOUGH_ARGS_TITLE: "Failed To Quote"
+    QUOTE_DEADLINE_NOT_ENOUGH_ARGS_DESCRIPTION: "You must provide a valid deadline. `d` (days), `w` (weeks (7 days)), `m` (months (30 days)) are the valid arguments. Example: 7d, 1w, 1m"
+    QUOTE_DEADLINE_ARG_NOT_VALID_TITLE: "Failed To Quote"
+    QUOTE_DEADLINE_ARG_NOT_VALID_DESCRIPTION: "You must provide a valid deadline. `d` (days), `w` (weeks (7 days)), `m` (months (30 days)) are the valid arguments. Example: 7d, 1w, 1m"
+    QUOTE_SENT_TITLE: "Quote Sent"
+    QUOTE_SENT_DESCRIPTION: "Successfully sent them a quote!"
+
+Client:
+    NEW_QUOTE_TITLE: "New Quote From %FREELANCERNAME%" # %FREELANCERNAME% for the freelancer's name | %FREELANCER% for the freelancer's name + discriminator
+    NEW_QUOTE_DESCRIPTION: "%FREELANCERNAME% just quoted `$%QUOTE%`! \n\n__Rating__: \n%RATING% \n\n__Portfolio__: \n%PORTFOLIO% \n\n__Timezone__: \n%TIMEZONE% \n\n__Estimated Finish Time__: \n%FINISHTIME% \n\n__Comment__: \n%COMMENT%"  # %FREELANCERNAME% for the freelancer's name | %RATING% for the freelancer's rating | %PORTFOLIO% for the freelancer's portfolio | %TIMEZONE% for the freelancer's timezone | %FINISHTIME% for the Estimated Finish Time | %COMMENT% for the freelancer's comment
+    NOT_CLIENT_ACCEPT_QUOTE_TITLE: "Failed To Accept"
+    NOT_CLIENT_ACCEPT_QUOTE_DESCRIPTION: "You are not the client for this commission!"
+    ACCEPT_QUOTE_TITLE: "Accepting Quote"
+    ACCEPT_QUOTE_DESCRIPTION: "Accepting <a:loading:1081768286980673546>"
+    SUCCESS_ACCEPT_QUOTE_TITLE: "Accepted Quote"
+    SUCCESS_ACCEPT_QUOTE_DESCRIPTION: "Successfully accepted %FREELANCERNAME%!" # %FREELANCERNAME% for the freelancer's name %FREELANCER% for the freelancer's name + discriminator
+    SUCCESS_ACCEPT_QUOTE_TITLE2: "Invoice" # %FREELANCERNAME% for the freelancer's name %FREELANCER% for the freelancer's name + discriminator
+    SUCCESS_ACCEPT_QUOTE_DESCRIPTION2: "Choose the way you would like to pay the invoice. \n\n**__Amount__**: \n$%QUOTE% \n\n**__Service__**: \n%SERVICE% \n\n**__Freelancer__**: \n%FREELANCER%" # %QUOTE% for the accepted freelancer's quote | %SERVICE% for the service required | %FREELANCER% for the freelancer's name  and discriminator | %FREELANCERNAME% for the freelancer's name
+    NOT_CLIENT_PAYPAL_INVOICE_TITLE: "Failed To Create Invoice"
+    NOT_CLIENT_PAYPAL_INVOICE_DESCRIPTION: "You are not the client for this commission!"
+    PAYPAL_INVOICE_TITLE: "PayPal"
+    PAYPAL_INVOICE_DESCRIPTION: "Creating Invoice <a:loading:1081768286980673546>"
+    SUCCESS_PAYPAL_INVOICE_TITLE: "PayPal"
+    SUCCESS_PAYPAL_INVOICE_DESCRIPTION: "Click the button below to continue in PayPal. Thank you for using our services!"
+    PAID_PAYPAL_INVOICE_TITLE: "PayPal"
+    PAID_PAYPAL_INVOICE_DESCRIPTION: "Click the button below to continue in PayPal. Thank you for using our services! \n\n**[PAID]**"
+    PAYPAL_PAYMENT_RECEIVED_TITLE: "Payment Received"
+    PAYPAL_PAYMENT_RECEIVED_DESCRIPTION: "The client has just fully paid the invoice!"
+    NOT_CLIENT_BALANCE_INVOICE_TITLE: "Failed To Create Invoice"
+    NOT_CLIENT_BALANCE_INVOICE_DESCRIPTION: "You are not the client for this commission!"
+    NOT_CLIENT_DENY_QUOTE_TITLE: "Failed To Deny"
+    NOT_CLIENT_DENY_QUOTE_DESCRIPTION: "You are not the client for this commission!"
+    DENY_QUOTE_TITLE: "Denying Quote"
+    DENY_QUOTE_DESCRIPTION: "Denying <a:loading:1081768286980673546>"
+    SUCCESS_DENY_QUOTE_TITLE: " Denied Quote"
+    SUCCESS_DENY_QUOTE_DESCRIPTION: "Successfully denied their quote!"
+    DENY_QUOTE_FREELANCER_TITLE: "Denied Quote"
+    DENY_QUOTE_FREELANCER_DESCRIPTION: "Your quote for %FREELANCER_SERVER_CHANNEL_MENTION% was denied due to **%REASON%**!" # %FREELANCER_SERVER_CHANNEL_MENTION% to mention the freelancer server channel | %REASON% for the denial reason

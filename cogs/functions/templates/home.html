@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NexusServices API</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #272822;
+			color: #F8F8F2;
+			font-family: 'Courier New', Courier, monospace;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 50px 20px;
+		}
+
+		h1 {
+			font-size: 48px;
+			margin-top: 0;
+			text-align: center;
+			color: #F92672;
+			text-shadow: 2px 2px 0 #272822;
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+
+		h2 {
+			font-size: 36px;
+			margin-top: 50px;
+			margin-bottom: 20px;
+			color: #A6E22E;
+			text-shadow: 2px 2px 0 #272822;
+		}
+
+		.code {
+			background-color: #3E3D32;
+			color: #F8F8F2;
+			padding: 20px;
+			margin-bottom: 20px;
+			border-radius: 10px;
+			box-shadow: 2px 2px 0 #A6E22E;
+		}
+
+		.code pre {
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			line-height: 1.5;
+			white-space: pre-wrap;
+			word-wrap: break-word;
+		}
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            background-color: #3E3D32;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 0 #A6E22E;
+            color: #F8F8F2;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .dropdown-content a {
+            color: #F8F8F2;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .dropdown-content a:hover {
+            text-decoration: underline;
+        }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>NexusServices API</h1>
+		<p>Welcome to our API documentation. Here you can find all the information you need about our API endpoints and how to use them.</p>
+		<div class="dropdown">
+            <h2>Select Endpoint</h2>
+            <div class="dropdown-content">
+                <a href="#endpoint1">Endpoint 1</a>
+                <a href="#endpoint2">Endpoint 2</a>
+                <a href="#endpoint3">Endpoint 3</a>
+            </div>
+        </div>
+		<h2 id="endpoint1">Endpoint 1</h2>
+		<p>This endpoint allows you to retrieve information about a user. Here is an example request:</p>
+		<div class="code">
+			<pre>
+GET /users/123 HTTP/1.1
+Host: api.nexusservices.xyz/users/123
+Login: api.nexusservices.xyz/login
+			</pre>
+		</div>
+		<p>And here is an example response:</p>
+		<div class="code">
+			<pre>
+HTTP/1.1 200 OK
+Content-Type: application/json
+ 
+{
+    "description": "Software Developer",
+    "portfolio": "https://nexusservices.xyz/",
+    "timezone": "MST",
+    "paypal": "example@example.com",
+    "paypalme": "https://paypal.me/example"
+}
+			</pre>
+		</div>
+		<h2 id="endpoint2">Endpoint 2</h2>
+		<p>This endpoint allows you to create a new user. Here is an example request:</p>
+		<div class="code">
+			<pre>
+POST /api/users HTTP/1.1
+Host: example.com
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjN9.ztK5z5WYl5mOogRyK0tH8Usm0k4-M4cAGSD1nI69p8o
+ 
+{
+	"username": "janedoe",
+	"email": "janedoe@example.com",
+	"password": "p@ssw0rd"
+}
+			</pre>
+		</div>
+		<p>And here is an example response:</p>
+		<div class="code">
+			<pre>
+HTTP/1.1 201 Created
+Content-Type: application/json
+ 
+{
+	"id": 124,
+	"username": "janedoe",
+	"email": "janedoe@example.com"
+}
+			</pre>
+		</div>
+		<h2 id="endpoint3">Endpoint 3</h2>
+		<p>This endpoint allows you to update an existing user. Here is an example request:</p>
+		<div class="code">
+			<pre>
+PUT /api/users/123 HTTP/1.1
+Host: example.com
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjN9.ztK5z5WYl5mOogRyK0tH8Usm0k4-M4cAGSD1nI69p8o
+ 
+{
+	"email": "newemail@example.com"
+}
+			</pre>
+		</div>
+		<p>And here is an example response:</p>
+		<div class="code">
+			<pre>
+HTTP/1.1 200 OK
+Content-Type: application/json
+ 
+{
+	"id": 123,
+	"username": "johndoe",
+	"email": "newemail@example.com"
+}
+			</pre>
+		</div>
+	</div>
+</body>
+</html>
